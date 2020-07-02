@@ -9,7 +9,8 @@ import { map } from 'rxjs/operators';
 })
 export class ProductService {
 
-  private baseUrl = 'http://localhost:8080/api/products'
+  private baseUrl = 'http://localhost:8080/api/products';
+  //...api/products?size=100 <= before pagination to test
 
   constructor(private httpClient : HttpClient) { }
 
