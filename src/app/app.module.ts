@@ -11,7 +11,7 @@ import { ProductCategoryMenuComponent } from './components/product-category-menu
 
 //Define routes
 const routes: Routes = [
-  {path: 'category/:id', component: ProductListComponent},
+  {path: 'category/:id/:name', component: ProductListComponent},
   {path: 'category', component: ProductListComponent},
   {path: 'products', component: ProductListComponent},
   {path: '', redirectTo: '/products', pathMatch: 'full'},
