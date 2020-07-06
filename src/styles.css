@@ -526,6 +526,7 @@ input.au-input.au-input-xl{
 
 .product-box img {
     width: 150px;
+    margin: auto;
 }
 
 .items select {
@@ -547,11 +548,12 @@ input.au-input.au-input-xl{
 }
 .product-box h1{
     font-size:18px;
-    border-bottom:1px solid #ccc;
+    border-bottom:1px solid #ccc;;
     padding-bottom:5px;
     font-weight:600;
     padding-top:12px;
-    margin-bottom:7px
+    margin-bottom:7px;
+    margin-left: 60px; /* added to fix h1, may need to change*/
 }
 .product-box h2{
     font-size:15px;
