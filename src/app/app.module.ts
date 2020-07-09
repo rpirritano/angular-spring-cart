@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductService } from './services/product.service';
@@ -24,6 +25,7 @@ import { BoardEmpComponent } from './board-emp/board-emp.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 
 
 
@@ -45,11 +47,13 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     BoardAdminComponent,
     BoardEmpComponent,
     BoardUserComponent,
+    OrderConfirmationComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgbModule,
+    ReactiveFormsModule,
     FormsModule,
     AppRoutingModule
   ],

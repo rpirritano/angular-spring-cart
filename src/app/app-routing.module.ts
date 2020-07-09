@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardEmpComponent } from './board-emp/board-emp.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 
 
 const routes: Routes = [
@@ -23,14 +24,15 @@ const routes: Routes = [
   { path: 'emp', component: BoardEmpComponent },
   { path: 'admin', component: BoardAdminComponent },
   { path: 'checkout', component: CheckoutComponent },
+  { path: 'order-confirmation', component: OrderConfirmationComponent },
   { path: 'cart-details', component: CartDetailsComponent },
   { path: 'products/:id', component: ProductDetailsComponent },
   { path: 'search/:keyword', component: ProductListComponent },
   { path: 'category/:id/:name', component: ProductListComponent },
   { path: 'category', component: ProductListComponent },
   { path: 'products', component: ProductListComponent },
-  { path: '',   redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' }
+  { path: '',   redirectTo: 'products', pathMatch: 'full' },
+  { path: '**', redirectTo: 'products', pathMatch: 'full' }
 ];
 
 @NgModule({
