@@ -16,15 +16,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
-import { BoardAdminComponent } from './board-admin/board-admin.component';
-import { BoardEmpComponent } from './board-emp/board-emp.component';
-import { BoardUserComponent } from './board-user/board-user.component';
 
-import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 
 
@@ -40,13 +33,6 @@ import { OrderConfirmationComponent } from './components/order-confirmation/orde
     CartDetailsComponent,
     CartStatusComponent,
     CheckoutComponent,
-    LoginComponent,
-    RegisterComponent,
-    HomeComponent,
-    ProfileComponent,
-    BoardAdminComponent,
-    BoardEmpComponent,
-    BoardUserComponent,
     OrderConfirmationComponent,
   ],
   imports: [
@@ -59,7 +45,7 @@ import { OrderConfirmationComponent } from './components/order-confirmation/orde
   ],
   providers: [
     ProductService,
-    authInterceptorProviders
+   
   ],
   bootstrap: [AppComponent]
 })
