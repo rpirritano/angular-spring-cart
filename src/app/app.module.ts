@@ -17,6 +17,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 import { ProductService } from './_services/product.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -39,7 +40,8 @@ import { ProductService } from './_services/product.service';
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     ProductService,

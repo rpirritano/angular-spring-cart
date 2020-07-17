@@ -1,5 +1,4 @@
-You can add global styles to this file, and also import other style files */
-/*
+/* 
  * ----------------------------
  * Common CSS
  * ----------------------------
@@ -128,7 +127,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
     box-shadow:-2px 0 4px #0000003b
 }
 
-/*
+/* 
  * ----------------------------
  * Header Desktop Section
  * ----------------------------
@@ -308,7 +307,7 @@ input.au-input.au-input-xl{
     transform:translate(-50%,-50%)
 }
 
-/*
+/* 
  * ----------------------------
  * Left Menu Bar
  * ----------------------------
@@ -382,7 +381,7 @@ input.au-input.au-input-xl{
     color:#0da8e4
 }
 
-/*
+/* 
  * ----------------------------
  * Header Mobile Section
  * ----------------------------
@@ -515,10 +514,10 @@ input.au-input.au-input-xl{
     background:#fff
 }
 .main-content.page-m{
-    padding:10% 15%!important
+    padding: 10% 30% 10% 5%
 }
 
-/*
+/* 
  * ----------------------------
  * Products List
  * ----------------------------
@@ -526,7 +525,6 @@ input.au-input.au-input-xl{
 
 .product-box img {
     width: 150px;
-    margin: auto;
 }
 
 .items select {
@@ -548,12 +546,11 @@ input.au-input.au-input-xl{
 }
 .product-box h1{
     font-size:18px;
-    border-bottom:1px solid #ccc;;
+    border-bottom:1px solid #ccc;
     padding-bottom:5px;
     font-weight:600;
     padding-top:12px;
-    margin-bottom:7px;
-    margin-left: 60px; /* added to fix h1, may need to change*/
+    margin-bottom:7px
 }
 .product-box h2{
     font-size:15px;
@@ -562,7 +559,7 @@ input.au-input.au-input-xl{
     color:#585858
 }
 
-/*
+/* 
  * ----------------------------
  * Shopping Cart Checkout
  * ----------------------------
@@ -676,7 +673,7 @@ select{
     color:#828482
 }
 
-/*
+/* 
  * ----------------------------
  * Shopping Cart Details
  * ----------------------------
@@ -711,7 +708,7 @@ table.table.table-bordered th{
     margin-left:5px
 }
 
-/*
+/* 
  * ----------------------------
  * Product Details
  * ----------------------------
@@ -722,6 +719,7 @@ table.table.table-bordered th{
     font-weight:800;
     color:#0da8e4
 }
+
 .detail-section{
     margin-top:60px
 }
@@ -729,9 +727,10 @@ table.table.table-bordered th{
 .detail-img{
     width: 30%;
 }
+
 /**/
 
-/*
+/* 
  * ----------------------------
  * Buttons
  * ----------------------------
@@ -761,7 +760,7 @@ a.primary-btn:hover{
   font-weight: bold;
 }
 
-/*
+/* 
  * ----------------------------
  * Footer section
  * ----------------------------
@@ -786,7 +785,7 @@ footer ul li{
     padding:10px 20px
 }
 
-/*
+/* 
  * ----------------------------
  * Media Queries
  * ----------------------------
@@ -945,7 +944,7 @@ footer ul li{
         margin-right:15px
     }
         .main-content.page-m{
-        padding:10% 30% 10% 5%
+        padding:10% 0!important
     }
     .header-mobile .navbar-mobile{
         display:none;
