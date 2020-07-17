@@ -5,7 +5,6 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
-
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 
 
