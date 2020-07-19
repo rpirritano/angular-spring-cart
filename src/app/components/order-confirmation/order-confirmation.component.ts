@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartItem } from 'src/app/common/cart-item';
-import { CartService } from 'src/app/_services/cart.service';
+
 
 @Component({
   selector: 'app-order-confirmation',

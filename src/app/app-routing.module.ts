@@ -18,8 +18,9 @@ const routes: Routes = [
   { path: 'category/:id/:name', component: ProductListComponent },
   { path: 'category', component: ProductListComponent },
   { path: 'products', component: ProductListComponent },
-  { path: '',   redirectTo: 'products', pathMatch: 'full' },
-  { path: '**', redirectTo: 'products', pathMatch: 'full' }
+  { path: 'admin', loadChildren: () => import('./admin-layout/admin-layout.module').then(m => m.AdminLayoutModule) },
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
+  { path: '', component: ProductListComponent },
 ];
 
 @NgModule({

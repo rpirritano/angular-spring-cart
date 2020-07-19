@@ -345,6 +345,25 @@ input.au-input.au-input-xl{
     z-index:3
 }
 
+/*
+*  Menu Options
+*/
+.menu-sidebar-content-mb{
+    position:relative;
+    
+}
+
+.navbar-sidebar-mb{
+    padding:35px;
+    padding-bottom:20
+}
+
+
+
+/*
+*  Category List
+*/
+
 .menu-sidebar .navbar-list .navbar-sub-list{
     display:none;
     padding-left:34px
@@ -380,6 +399,8 @@ input.au-input.au-input-xl{
 .navbar-sidebar .navbar-list li a:hover{
     color:#0da8e4
 }
+
+
 
 /* 
  * ----------------------------
@@ -1041,3 +1062,6 @@ footer ul li{
         padding:8px 0
     }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
