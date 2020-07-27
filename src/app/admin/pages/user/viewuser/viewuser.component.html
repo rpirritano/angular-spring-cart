@@ -1,0 +1,22 @@
+<div class="userDetails">
+  <h2>User details</h2>
+
+  <table>
+    <tr>
+      <td>User Id</td>
+      <td>{{user.id}}</td>
+    </tr>
+    <tr>
+      <td>User Name</td>
+      <td>{{user.userName}}</td>
+    </tr>
+    <tr>
+      <td>User Role</td>
+      <td>{{user.role}}</td>
+    </tr>
+
+  </table>
+  <br>
+  <a class="btn btn-small btn-warning" (click)="editUser()">edit</a> 
+  <a class="btn btn-small btn-danger" (click)="deleteUser()"> delete</a>
+</div>

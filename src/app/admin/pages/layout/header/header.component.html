@@ -1,0 +1,18 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div><a routerLink="/admin" class="navbar-brand">EveryDay Admin Portal</a></div>
+
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Admin Tools</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button routerLink="/admin/users" ngbDropdownItem>Users</button>
+            <button routerLink="/admin/products" ngbDropdownItem>Products</button>
+            <button ngbDropdownItem>Back to EveryDay Markets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

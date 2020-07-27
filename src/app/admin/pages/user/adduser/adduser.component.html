@@ -1,0 +1,24 @@
+<h1>Add User</h1>
+<form #recievedUser="ngForm">
+
+  <label for="firstName">First Name</label>
+  <input type="text" class="form-control" id="firstName" placeholder="First Name" [(ngModel)]="user.firstName" name="firstName">
+
+  <label for="lastName">Last Name</label>
+  <input type="text" class="form-control" id="lastName" placeholder="Last Name" [(ngModel)]="user.lastName" name="lastName">
+
+  <label for="email">Email</label>
+  <input type="text" class="form-control" id="email" placeholder="Email" [(ngModel)]="user.email" name="email">
+
+  <label for="userName">Username</label>
+  <input type="text" class="form-control" id="userName" placeholder="Username" [(ngModel)]="user.userName" name="userName">
+
+  <label for="password">Password</label>
+  <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="user.password" name="password">
+
+  <label for="role">User Role</label>
+  <input type="text" class="form-control" id="role" placeholder="User Role" [(ngModel)]="user.role" name="role">
+
+   <br>
+  <button type="button" class="btn btn-success" (click)="addUser()">Save</button>
+</form>

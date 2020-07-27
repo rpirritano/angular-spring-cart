@@ -1,0 +1,17 @@
+<h1>{{product.id == null ? 'Add' : 'Edit'}} Product - {{product.id}}</h1>
+<form #recievedProduct="ngForm">
+
+  <label for="name">Product Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Product Name" [(ngModel)]="product.name" name="name">
+
+  <label for="description">Description</label>
+  <input type="text" class="form-control" id="description" placeholder="Description" [(ngModel)]="product.description" name="description">
+
+  <label for="unitPrice">Unit Price</label>
+  <input type="text" class="form-control" id="unitPrice" placeholder="Unit Price" [(ngModel)]="product.unitPrice" name="unitPrice">
+
+  <label for="imageUrl">Image URL</label>
+  <input type="text" class="form-control" id="imageUrl" placeholder="Image URL" [(ngModel)]="product.imageUrl" name="imageUrl">
+   <br>
+  <button type="button" class="btn btn-success" (click)="addProduct()">Save</button>
+</form>
