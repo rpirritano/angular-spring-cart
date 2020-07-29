@@ -14,17 +14,18 @@ const routes: Routes = [
 
   { path: 'store', component: StoreComponent,
     children: [
-        
-        {path: 'checkout', component: CheckoutComponent},
-        {path: 'cart-details', component: CartDetailsComponent},
-        {path: 'products/:id', component: ProductDetailsComponent},
-        {path: 'order-confirmation', component: OrderConfirmationComponent},
-        {path: 'search/:keyword', component: ProductListComponent},
-        {path: 'category/:id', component: ProductListComponent},
-        {path: 'category', component: ProductListComponent},
-        {path: 'products', component: ProductListComponent},
-        {path: 'contact-us', component: ContactUsComponent},
-        {path: 'about-us', component: AboutUsComponent},
+      {path: 'category/:id', component: ProductListComponent},
+      {path: 'category', component: ProductListComponent},
+      {path: 'products/:id', component: ProductDetailsComponent},
+      {path: 'products', component: ProductListComponent},
+      {path: 'checkout', component: CheckoutComponent},
+      {path: 'cart-details', component: CartDetailsComponent},
+      {path: 'order-confirmation', component: OrderConfirmationComponent},
+      {path: 'search/:keyword', component: ProductListComponent},
+      {path: 'contact-us', component: ContactUsComponent},
+      {path: 'about-us', component: AboutUsComponent},
+      {path: '', redirectTo: '/store/products', pathMatch: 'full'}, //not working?
+      {path: '**', redirectTo: '/store/products', pathMatch: 'full'}, //not working?
     ],
     
   },
