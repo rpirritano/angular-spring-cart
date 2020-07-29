@@ -13,6 +13,7 @@ import { ProductCategory } from 'src/app/core/models/product-category';
 export class ProductCategoryMenuComponent implements OnInit {
 
   productCategories: ProductCategory[];
+  private categoryUrl = 'http://localhost:8080/api/product-category';
   
   constructor(private productService: ProductService) { }
 

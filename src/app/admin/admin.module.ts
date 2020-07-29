@@ -3,9 +3,6 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { DecimalPipe } from '@angular/common';
-
-
 
 import { UserComponent } from './pages/user';
 import { AdduserComponent } from './pages/user/adduser/adduser.component';
@@ -15,8 +12,7 @@ import { AddproductComponent } from './pages/products/addproduct/addproduct.comp
 import { ViewproductComponent } from './pages/products/viewproduct/viewproduct.component';
 import { DashboardComponent, HeaderComponent } from '.';
 import { AdminComponent } from './pages';
-import { NgbdSortableHeader } from '../core/directives/sortable.directive';
- 
+
 
  
 @NgModule({
@@ -30,7 +26,7 @@ import { NgbdSortableHeader } from '../core/directives/sortable.directive';
     ProductsComponent,
     AddproductComponent,
     ViewproductComponent,
-    NgbdSortableHeader
+   
   ],
   imports: [
     BrowserModule,
@@ -39,6 +35,6 @@ import { NgbdSortableHeader } from '../core/directives/sortable.directive';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [DecimalPipe],
+  providers: [],
 })
 export class AdminModule { }

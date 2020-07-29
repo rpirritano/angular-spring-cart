@@ -1,0 +1,52 @@
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <table class="table table-bordered">
+                <tr>
+                    <th width="20%">Product Image</th>
+                    <th width="50%">Order Details</th>
+                    <th width="30%"></th>
+                </tr>
+                <tr *ngFor="let tempOrderItem of orderItems">
+                    <td>
+                        <img src="{{ tempOrderItem.imageUrl }}" class="img-responsive" width="150px" />
+                    </td>
+                    <td>
+                        <p>{{ tempOrderItem.name }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td style="font-weight: bold">
+                        <p>Total Quantity: {{ totalQuantity }}</p>
+                        <p>Shipping: FREE</p>
+                        <p>Total Price: {{ totalPrice | currency: 'USD' }}</p>
+
+                    </td>
+                </tr>
+            </table>
+            <div class="container">
+                <header class="jumbotron">
+                    <h3>
+                        <strong>EveryDay Market</strong>
+                        <strong>Thanks You!</strong>
+                    </h3>
+                </header>
+                <p>Thank you for your order. You will recieve an email confirmation. Please
+                    come again!
+                </p>
+            </div>
+        </div>
+        <a routerLink="/store/products" class="mt-5">Back to Shopping</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

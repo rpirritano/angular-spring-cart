@@ -1,23 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import {DecimalPipe} from '@angular/common';
-import {QueryList, ViewChildren} from '@angular/core';
-import {Observable} from 'rxjs';
-
 
 import { HttpClientService } from 'src/app/core/services/http-client.service';
 import { User } from 'src/app/core/models/user';
-
-import { NgbdSortableHeader, SortEvent } from 'src/app/core/directives/sortable.directive';
-import { UserViewService } from 'src/app/core';
-import { RestAPIService } from 'src/app/core/services/RestAPIService';
-
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css'],
-  providers: [UserComponent, DecimalPipe]})
+  providers: [UserComponent]})
   
 export class UserComponent implements OnInit {
 
@@ -26,17 +17,11 @@ export class UserComponent implements OnInit {
   action: string;
   ItemsArray = [];
 
-  users$: Observable<User[]>;
-  total$: Observable<number>;
-
-  @ViewChildren(NgbdSortableHeader) headers: QueryList<NgbdSortableHeader>;
 
   constructor(private httpClientService: HttpClientService,
     private router: Router,
-    private activatedRoute: ActivatedRoute,
-    public service: UserViewService) {
-      this.users$ = service.users$;
-      this.total$ = service.total$;
+    private activatedRoute: ActivatedRoute) {
+      
      }
 
   ngOnInit() {
@@ -70,19 +55,6 @@ export class UserComponent implements OnInit {
   addUser() {
     this.selectedUser = new User();
     this.router.navigate(['admin', 'users'], { queryParams: { action: 'add' } });
-  }
-  
-
-  onSort({column, direction}: SortEvent) {
-    // resetting other headers
-    this.headers.forEach(header => {
-      if (header.sortable !== column) {
-        header.direction = '';
-      }
-    });
-
-    this.service.sortColumn = column;
-    this.service.sortDirection = direction;
   }
   
 }
