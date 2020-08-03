@@ -1,4 +1,4 @@
 export * from './core.module';
-export * from './services';
+export * from './_services';
 export * from './models';
 export * from './_helpers';

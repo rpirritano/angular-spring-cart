@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Product } from 'src/app/core/models/product';
-import { ProductService } from 'src/app/core/services/product.service';
-import { CartService } from 'src/app/core/services/cart.service';
+import { ProductService } from 'src/app/core/_services/product.service';
+import { CartService } from 'src/app/core/_services/cart.service';
 import { CartItem } from 'src/app/core/models/cart-item';
 
 

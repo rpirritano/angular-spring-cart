@@ -19,7 +19,7 @@ import { BoardUserComponent } from './pages/board-user/board-user.component';
 
 import { AuthInterceptor } from '../core/_helpers/auth.interceptor';
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
-import { ContactMailService } from '../core/services/contact-mail.service';
+import { ContactMailService } from '../core/_services/contact-mail.service';
 import { ItemSpecialComponent } from './pages/item-special/item-special.component';
 
 
