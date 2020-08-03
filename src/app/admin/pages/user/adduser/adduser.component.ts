@@ -2,7 +2,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { User } from 'src/app/core/models/user';
 
 import { Router } from '@angular/router';
-import { HttpClientService } from 'src/app/core/_services/http-client.service';
+import { HttpClientService } from 'src/app/core/services/http-client.service';
 
 @Component({
   selector: 'app-adduser',

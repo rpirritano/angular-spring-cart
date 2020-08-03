@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/core/models/products-admin';
-import { HttpClientService } from 'src/app/core/_services/http-client.service';
+import { HttpClientService } from 'src/app/core/services/http-client.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 

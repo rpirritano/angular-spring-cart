@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/core/_services/auth.service';
-import { TokenStorageService } from 'src/app/core/_services/token-storage.service';
+import { AuthService } from 'src/app/core/services/auth.service';
+import { TokenStorageService } from 'src/app/core/services/token-storage.service';
 
 
 @Component({

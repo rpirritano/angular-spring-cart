@@ -3,7 +3,7 @@ import { Product } from 'src/app/core/models/product';
 
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { HttpClientService } from 'src/app/core/_services/http-client.service';
+import { HttpClientService } from 'src/app/core/services/http-client.service';
 
 @Component({
   selector: 'app-addproduct',
