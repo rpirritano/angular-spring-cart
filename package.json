@@ -28,7 +28,6 @@
     "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
-    "jquery": "^3.5.1",
     "mdbootstrap": "^4.19.1",
     "rxjs": "~6.6.0",
     "zone.js": "~0.10.3"

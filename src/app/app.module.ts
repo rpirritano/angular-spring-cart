@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
  
 import { AdminModule} from './admin/admin.module';
 import { StoreModule } from './store/store.module';
-import { MainModule } from './main/main.module';
 
 
  
@@ -24,7 +23,6 @@ import { MainModule } from './main/main.module';
     NgbModule,
     AdminModule,
     StoreModule,
-    MainModule,
    
     
 

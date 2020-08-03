@@ -11,4 +11,3 @@ export * from './layout/main-layout/main-layout.component';
 export * from './cart-details/cart-details.component';
 export * from './checkout/checkout.component';
 export * from './store.component';
-

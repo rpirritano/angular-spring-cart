@@ -1,6 +1,4 @@
-import { Component, ViewChild} from '@angular/core';
-import { ProductListComponent } from './product-list/product-list.component';
-import { CartStatusComponent } from './cart-status/cart-status.component';
+import { Component} from '@angular/core';
 
 
  
@@ -10,5 +8,5 @@ import { CartStatusComponent } from './cart-status/cart-status.component';
   styleUrls: ['./store.component.css']
 })
 
-export class StoreComponent {
+export class StoreComponent  {
 }
