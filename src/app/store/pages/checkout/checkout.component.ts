@@ -3,7 +3,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { Country } from 'src/app/core/models/country';
 import { State } from 'src/app/core/models/state';
 import { CheckoutFormService } from 'src/app/core/services/checkout-form.service';
-
+import { CartService } from 'src/app/core/services/cart.service';
+import { CartItem } from 'src/app/core/models/cart-item';
 
 
 
@@ -16,7 +17,9 @@ export class CheckoutComponent implements OnInit {
 
   checkoutFormGroup: FormGroup;
 
-  totalPrice: number = 0;
+
+  cartItems: CartItem[] = [];
+  totalPrice: number = 0.00;
   totalQuantity: number = 0;
   
   creditCardYears: number[] = [];
@@ -28,9 +31,12 @@ export class CheckoutComponent implements OnInit {
   billingAddressStates: State[] = [];
 
   constructor(private formBuilder: FormBuilder,
-              private checkoutFormService: CheckoutFormService) { }
+              private checkoutFormService: CheckoutFormService,
+              private cartService: CartService) { }
 
   ngOnInit(): void {
+
+    this.listCartDetails();
     
     this.checkoutFormGroup = this.formBuilder.group({
       customer: this.formBuilder.group({
@@ -62,6 +68,8 @@ export class CheckoutComponent implements OnInit {
       })
     });
 
+  
+
     // populate credit card months
 
     const startMonth: number = new Date().getMonth() + 1;
@@ -92,6 +100,25 @@ export class CheckoutComponent implements OnInit {
     }
   );
 }
+  listCartDetails() {
+
+    // get a handle to the cart items
+    this.cartItems = this.cartService.cartItems;
+
+    // subscribe to the cart totalPrice
+    this.cartService.totalPrice.subscribe(
+      data => this.totalPrice = data
+    );
+
+    // subscribe to the cart totalQuantity
+    this.cartService.totalQuantity.subscribe(
+      data => this.totalQuantity = data
+    );
+
+     // compute cart total price and quantity
+     this.cartService.computeCartTotals();
+    }
+  
 
   copyShippingAddressToBillingAddress(event) {
 
