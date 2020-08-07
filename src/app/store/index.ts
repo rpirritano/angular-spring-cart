@@ -10,3 +10,4 @@ export * from './pages/product-category-menu';
 export * from './pages/product-details';
 export * from './pages/product-list';
 export * from './pages/search';
+export * from './pages/store.component';
