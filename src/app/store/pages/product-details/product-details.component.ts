@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Product } from 'src/app/core/models/product';
 import { ProductService } from 'src/app/core/services/product.service';
-import { CartService } from 'src/app/core/services/cart.service';
+import { OrderService } from 'src/app/core/services/order.service';
 import { CartItem } from 'src/app/core/models/cart-item';
 
 
@@ -19,7 +19,7 @@ export class ProductDetailsComponent implements OnInit {
   product: Product = new Product();
 
   constructor(private productService: ProductService,
-              private cartService: CartService,
+              private cartService: OrderService,
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {

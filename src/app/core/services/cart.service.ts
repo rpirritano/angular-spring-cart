@@ -7,6 +7,7 @@ import { CartItem } from '../models/cart-item';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CartService {
 
   cartItems: CartItem[] = [];

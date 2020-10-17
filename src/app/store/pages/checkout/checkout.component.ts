@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { Country } from 'src/app/core/models/country';
 import { State } from 'src/app/core/models/state';
 import { CheckoutFormService } from 'src/app/core/services/checkout-form.service';
-import { CartService } from 'src/app/core/services/cart.service';
+import { OrderService } from 'src/app/core/services/order.service';
 import { CartItem } from 'src/app/core/models/cart-item';
 
 
@@ -32,7 +32,7 @@ export class CheckoutComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private checkoutFormService: CheckoutFormService,
-              private cartService: CartService) { }
+              private cartService: OrderService) { }
 
   ngOnInit(): void {
 

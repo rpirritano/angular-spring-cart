@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/core/models/product';
 import { CartItem } from 'src/app/core/models/cart-item';
 import { ProductService } from 'src/app/core/services/product.service';
-import { CartService } from 'src/app/core/services/cart.service';
+import { OrderService } from 'src/app/core/services/order.service';
 
 
 
@@ -31,7 +31,7 @@ export class ProductListComponent implements OnInit {
   previousKeyword: string = null;
 
   constructor(private productService: ProductService,
-              private cartService: CartService,
+              private cartService: OrderService,
               private route: ActivatedRoute) { }
 
   ngOnInit() {
